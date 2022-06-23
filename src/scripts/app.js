@@ -13,7 +13,7 @@ const getDataFromAPI = async (code) => {
 // getDataFromAPI('usd').then(console.log)
 
 const getDataFromBackend = async (code) => {
-    const request = await new Promise(async (resolve, reject) => {
+    return await new Promise(async (resolve, reject) => {
         const response = await fetch(`${urlAPI}?code=${code}`, {
             method: "GET",
             headers: {
@@ -22,6 +22,7 @@ const getDataFromBackend = async (code) => {
 
             }
         });
+
         const data = await response.json();
 
         if (data.length){
@@ -29,8 +30,6 @@ const getDataFromBackend = async (code) => {
         }
         reject('Something is no yes');
     })
-
-    return request;
 }
-
 getDataFromBackend(`usd`).then(console.log)
+
