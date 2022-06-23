@@ -1,3 +1,3 @@
 # App_js
 
-## CORS - cross origin request sharing
+## CORS - cross origin request sharing ✅
