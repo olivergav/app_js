@@ -19,12 +19,12 @@
 // console.log(sentence);
 
 
-const htmlGenerator = (strings, ...vars) => `<h2>${strings
-    .map((string, id) => `${string} ${vars[id] ? `<span>${vars[id]}</span>` : ''}`)
-    .join('')}</h2>`
-
-
-const name = 'Ala';
-
-const html = htmlGenerator`Hello ${name}!`; //<h2>Hello <span>Ala</span></h2>
-
+// const htmlGenerator = (strings, ...vars) => `<h2>${strings
+//     .map((string, id) => `${string} ${vars[id] ? `<span>${vars[id]}</span>` : ''}`)
+//     .join('')}</h2>`
+//
+//
+// const name = 'Ala';
+//
+// const html = htmlGenerator`Hello ${name}!`; //<h2>Hello <span>Ala</span></h2>
+//
